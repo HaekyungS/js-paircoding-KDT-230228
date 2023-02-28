@@ -7,6 +7,26 @@
   <title>Document</title>
 </head>
 <body>
+  <script>
+    const hours = new Date().getHours();
+    let time;
+    if(hours>=6&&hours<=18){
+      time=1;
+    }else{
+      time=2;
+    }
+
+    function buttonClick(){
+      if(time===1){
+        time=2;
+      }else if(time===2){
+        time=1;
+      }
+    }
+
+    // footer.children[0].addEventListener("click",buttonClick())
+
+  </script>
   <script src="./White.js"></script>
   <script src="./black_theme.js"></script>
 </body>

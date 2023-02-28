@@ -1,3 +1,4 @@
+// console.log(time)
 const morning=new Date().getHours();
 if(morning>=6&&morning<=18){
 const trainingData = {
