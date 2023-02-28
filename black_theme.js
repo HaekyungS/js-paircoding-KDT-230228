@@ -1,3 +1,5 @@
+const afternoon = new Date().getHours()
+if (afternoon>18 && afternoon<6) {
 const YH = {
   createElement : function createElement(tagName, attri, attriValue, target) {
     const element = document.createElement(tagName);
@@ -116,3 +118,4 @@ circle.style.height='82px';
 circle.style.backgroundColor='white';
 circle.style.borderRadius='5rem';
 // ------------------------------------------------------
+}
