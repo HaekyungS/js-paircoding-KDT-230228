@@ -1,5 +1,5 @@
 
-if (time === 2) {
+if (time===2) {
 const YH = {
   createElement : function createElement(tagName, attri, attriValue, target) {
     const element = document.createElement(tagName);
