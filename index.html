@@ -7,14 +7,18 @@
   <title>Document</title>
 </head>
 <body>
+  <script src="./common.js"></script>
+  //공통부분 스크립트 먼저 적용
   <script>
     const hours = new Date().getHours();
     let time;
-    if(hours>=6&&hours<=18){
+    
+    if(hours>=6 || hours<=18){
       time=1;
-    }else{
+    }else if(hours<6 || hours>18){
       time=2;
     }
+    //also 가 아니라 or 로 해야 적용되용...
 
     function buttonClick(){
       if(time===1){
@@ -22,12 +26,11 @@
       }else if(time===2){
         time=1;
       }
-    }
-
-    // footer.children[0].addEventListener("click",buttonClick())
-
+    };
+    circle[0].addEventListener("click",buttonClick());
+    //위치는 맞는데 addEventListener 가 지금 작동하지 않아요ㅠㅠ
   </script>
-  <script src="./White.js"></script>
+  <script src="./white_theme.js"></script>
   <script src="./black_theme.js"></script>
 </body>
 </html>
