@@ -1,5 +1,5 @@
 const morning=new Date().getHours();
-if(morning>6&&morning<=18){
+if(morning>=6&&morning<=18){
 const trainingData = {
   title: "Lorem Ipsum",
   paragraph: "",
