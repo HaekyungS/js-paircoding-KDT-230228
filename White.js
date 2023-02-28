@@ -1,18 +1,18 @@
 // console.log(time)
 const morning=new Date().getHours();
 if(morning>=6&&morning<=18){
-const trainingData = {
-  title: "Lorem Ipsum",
-  paragraph: "",
-  color: ["#1E1E1E", "#FFFFFF"]
-}
+// const trainingData = {
+//   title: "Lorem Ipsum",
+//   paragraph: "",
+//   color: ["#1E1E1E", "#FFFFFF"]
+// }
 
 document.body.style.cssText="width:430px; height:932px; background-color:" + trainingData.color[1] + ";"
 
-const root = document.createElement("div")
-root.setAttribute("id","root")
-root.style.cssText = "width:430px; height:932px; background-color:" + trainingData.color[1] + "; display:flex; flex-direction:column; place-content:center; align-items:center"
-document.body.appendChild(root)
+// const root = document.createElement("div")
+// root.setAttribute("id","root")
+// root.style.cssText = "width:430px; height:932px; background-color:" + trainingData.color[1] + "; display:flex; flex-direction:column; justify-content:center; align-items:center"
+// document.body.appendChild(root)
 
 for(i=0;i<3;i++){
   const divs=document.createElement("div")
