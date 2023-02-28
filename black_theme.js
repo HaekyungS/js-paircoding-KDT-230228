@@ -1,6 +1,5 @@
-const afternoon = new Date().getHours()
 
-if (afternoon>18 && afternoon<6) {
+if (time === 2) {
 const YH = {
   createElement : function createElement(tagName, attri, attriValue, target) {
     const element = document.createElement(tagName);
