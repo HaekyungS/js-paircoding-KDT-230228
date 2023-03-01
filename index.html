@@ -8,6 +8,7 @@
 </head>
 <body>
   <script src="./common.js"></script>
+  <script src="./Theme.js"></script>
   <!-- 공통부분 스크립트 먼저 적용 -->
   <script>
     const hours = new Date().getHours();
@@ -21,6 +22,9 @@
     //also 가 아니라 or 로 해야 적용되용...
     //review> 아녀요! 0~23까지의 숫자라 6보다크면서 18보다 작은/6보다 작거나 18보다크거나 라서 위에는 && 아래는 || 입니다!
 
+    changeTheme()
+    
+    
     circle[0].addEventListener("click", function() {
       if(time === 1){
         time = 2;
@@ -28,15 +32,13 @@
       }else{
         time = 1;
       } 
-      console.log(time);
+      changeTheme()
     }
     );
     //함수 내부에서 콘솔찍어보면 눌렀을 땐 숫자가 변하는게 보이는데 스크립트가 안변함. 
     //함수 내부에 찍었을 땐, 클릭 시의 콘솔이니까 나타나는 거고, 시점이 이미 스크립트가 다 끝난 뒤의 이벤트라 안변하는 걸까요..?
 
   </script>
-  <script src="./white_theme.js"></script>
-  <script src="./black_theme.js"></script>
   <script></script>
 </body>
 </html>
